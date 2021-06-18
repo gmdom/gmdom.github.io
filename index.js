@@ -1,4 +1,4 @@
-//PWCheckout.Bind('tokenCreated', OnTokenReceived);
+PWCheckout.Bind('tokenCreated', OnTokenReceived);
 PWCheckout.AddActionButton('buttonId1');
 PWCheckout.SetProperties({
     name: 'Demo Test.',
@@ -13,10 +13,10 @@ PWCheckout.SetProperties({
     checkout_card: 1,
     autoSubmit: 'true'
 });
-// function OnTokenReceived(token) {
-//   alert(token.TokenId);
-//   document.getElementById('PWTokenAux').value = token.TokenId;
-// }
+function OnTokenReceived(token) {
+    alert(token.TokenId);
+    //document.getElementById('PWTokenAux').value = token.TokenId;
+}
 // document
 //   .getElementById('btnCheckout')
 //   .addEventListener('click', function (event) {
