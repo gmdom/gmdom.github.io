@@ -15,7 +15,7 @@ PWCheckout.SetProperties({
 });
 function OnTokenReceived(token) {
     alert(token.TokenId);
-    //document.getElementById('PWTokenAux').value = token.TokenId;
+    document.getElementById('PWTokenAux').value = token.TokenId;
 }
 // document
 //   .getElementById('btnCheckout')
