@@ -3,7 +3,8 @@ PWCheckout.AddActionButton('buttonId1');
 PWCheckout.SetProperties({
     name: 'Demo Test.',
     email: 'gpigni@pagosweb.com.uy',
-    //"image": "http://pepito.com/images/logocheckout.png", "button-label": "Pagar #monto#",
+    image: 'http://mitienda.com/images/logocheckout.png',
+    button_label: 'Pagar #monto#',
     description: 'Checkout Creditel Test.',
     currency: 'DOP',
     amount: '100',
