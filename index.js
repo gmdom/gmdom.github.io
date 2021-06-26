@@ -5,7 +5,7 @@ PWCheckout.Bind('tokenCreated', OnTokenReceived);
 //PWCheckout.AddActionButton('buttonId1');
 function openForm(event) {
   event.preventDefault();
-  var customerUniqueId = 'UI_0ab4f9e3-6f03-49d5-9a10-8bd2105c3cbd';
+  var customerUniqueId = 'UI_fa6cb72b-e913-46c2-abec-6d59071252b8';
   var captureUrl = 'https://lab.cardnet.com.do/servicios/tokens/v1/Capture/';
   var myPublicKey = 'mfH9CqiAFjFQh_gQR_1TQG_I56ONV7HQ';
   PWCheckout.OpenIframeCustom(
@@ -24,7 +24,8 @@ PWCheckout.SetProperties({
   lang: 'ESP',
   form_id: 'shoppingcart_form',
   checkout_card: 1,
-  autoSubmit: 'true',
+  autoSubmit: 'false',
+  empty: 'true',
 });
 function OnTokenReceived(token) {
   alert(token.TokenId);
