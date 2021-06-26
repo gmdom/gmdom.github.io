@@ -18,7 +18,7 @@ PWCheckout.SetProperties({
   button_label: 'Pagar #monto#',
   description: 'Checkout Creditel Test.',
   currency: 'DOP',
-  amount: 100,
+  amount: '100',
   lang: 'ESP',
   form_id: 'shoppingcart_form',
   checkout_card: 1,
