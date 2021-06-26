@@ -18,12 +18,12 @@ PWCheckout.SetProperties({
   button_label: 'Pagar #monto#',
   description: 'Checkout Creditel Test.',
   currency: 'DOP',
-  amount: '100',
+  amount: 100,
   lang: 'ESP',
   form_id: 'shoppingcart_form',
-  checkout_card: 1,
-  autoSubmit: 'false',
-  empty: 'true',
+  //checkout_card: 1,
+  autoSubmit: true,
+  empty: true,
 });
 function OnTokenReceived(token) {
   alert(token.TokenId);
