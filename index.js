@@ -1,6 +1,4 @@
-document.getElementById('buttonId1').addEventListener('click', function () {
-  openForm();
-});
+document.getElementById('buttonId1').addEventListener('click', openForm);
 PWCheckout.Bind('tokenCreated', OnTokenReceived);
 //PWCheckout.AddActionButton('buttonId1');
 function openForm(event) {
