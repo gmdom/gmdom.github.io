@@ -1,5 +1,14 @@
+document.getElementById('buttonId1').addEventListener(function () {
+    openForm();
+});
 PWCheckout.Bind('tokenCreated', OnTokenReceived);
-PWCheckout.AddActionButton('buttonId1');
+//PWCheckout.AddActionButton('buttonId1');
+function openForm() {
+    var customerUniqueId = 'dd';
+    var captureUrl = 'https://';
+    var myPublicKey = '';
+    PWCheckout.OpenIframeCustom(captureUrl + '?key=' + myPublicKey + '&session_id=' + customerUniqueId, customerUniqueId);
+}
 PWCheckout.SetProperties({
     name: 'Demo Test.',
     email: 'gpigni@pagosweb.com.uy',
@@ -15,7 +24,8 @@ PWCheckout.SetProperties({
 });
 function OnTokenReceived(token) {
     alert(token.TokenId);
-    document.getElementById('PWTokenAux').value = token.TokenId;
+    var textview = document.getElementById('PWTokenAux');
+    textview.value = token.TokenId;
 }
 // document
 //   .getElementById('btnCheckout')
