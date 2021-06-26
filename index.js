@@ -21,8 +21,8 @@ PWCheckout.SetProperties({
   amount: 100,
   lang: 'ESP',
   form_id: 'shoppingcart_form',
-  //checkout_card: 1,
-  autoSubmit: 'true',
+  checkout_card: 1,
+  autoSubmit: 'false',
   empty: 'true',
 });
 function OnTokenReceived(token) {
