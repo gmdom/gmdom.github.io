@@ -3,7 +3,7 @@ PWCheckout.Bind('tokenCreated', OnTokenReceived);
 //PWCheckout.AddActionButton('buttonId1');
 function openForm(event) {
   event.preventDefault();
-  var customerUniqueId = 'UI_10e0c509-a2bc-4efa-ac56-54d7332ca8d5';
+  var customerUniqueId = 'UI_ddf8c7a1-74c2-4781-a424-ae36de50fd76';
   var captureUrl = 'https://lab.cardnet.com.do/servicios/tokens/v1/Capture/';
   var myPublicKey = 'mfH9CqiAFjFQh_gQR_1TQG_I56ONV7HQ';
   PWCheckout.OpenIframeCustom(
