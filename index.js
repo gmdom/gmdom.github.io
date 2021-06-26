@@ -4,9 +4,9 @@ document.getElementById('buttonId1').addEventListener('click', function () {
 PWCheckout.Bind('tokenCreated', OnTokenReceived);
 //PWCheckout.AddActionButton('buttonId1');
 function openForm() {
-    var customerUniqueId = 'dd';
-    var captureUrl = 'https://';
-    var myPublicKey = '';
+    var customerUniqueId = 'UI_0ab4f9e3-6f03-49d5-9a10-8bd2105c3cbd';
+    var captureUrl = 'https://lab.cardnet.com.do/servicios/tokens/v1/Capture/';
+    var myPublicKey = 'mfH9CqiAFjFQh_gQR_1TQG_I56ONV7HQ';
     PWCheckout.OpenIframeCustom(captureUrl + '?key=' + myPublicKey + '&session_id=' + customerUniqueId, customerUniqueId);
 }
 PWCheckout.SetProperties({
