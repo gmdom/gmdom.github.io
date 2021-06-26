@@ -22,11 +22,11 @@ PWCheckout.SetProperties({
   lang: 'ESP',
   form_id: 'shoppingcart_form',
   checkout_card: 1,
-  autoSubmit: 'true',
+  autoSubmit: 'false',
   empty: 'true',
 });
 function OnTokenReceived(token) {
-  alert(token.TokenId);
+  //alert(token.TokenId);
   var textview = document.getElementById('PWTokenAux');
   textview.value = token.TokenId;
 }
